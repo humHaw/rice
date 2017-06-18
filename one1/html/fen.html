@@ -1,0 +1,31 @@
+
+<div ng-controller="dan2">
+    <header  class="swiper-container">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide" ng-repeat="i in dete track by $index" ui-sref="fen({cateId:i.cateId})" ng-init="fen_style()"><p>{{i.cateName}}</p></li>
+        </ul>
+    </header>
+    <div class="content1">
+        <div class="l_con swiper-container">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide"><img src="../data/314935-106.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="../data/aaa.png" alt=""></li>
+            </ul>
+        </div>
+        <div  ng-repeat="add in classigySubparams track by $index">
+            <div class="cen_title">
+                <h3>{{add.data.cateName}}</h3>
+                <p>严选材料，精心定制</p>
+            </div>
+            <div class="cen_lei">
+                <div ng-repeat="arr in add.data.ptList track by $index">
+                    <img ng-src="{{arr.image}}" alt="">
+                    <h5>{{arr.productName}}</h5>
+                    <p>￥{{arr.price}}</p>
+                </div>
+            </div>
+        </div>
+        <h1></h1>
+        <h1></h1>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+严选商城：
+首页
+分类
+购物车
+个人中心
+需求：
+近乎100%还原效果图
+使用angular ui.router实现SPA（单页面应用程序）
+angular版本1.5.5
+ui.router版本0.2.18
+API：
+首页：http://mall.tx2010.cn/mall/special/list?curPage=1&pageSize=5
+分类：http://mall.tx2010.cn/mall/product/cates
+分类下面的商品：http://mall.tx2010.cn/mall/product/cateProducts

@@ -1,0 +1,5 @@
+<ul class="{{ulDiao}}">
+    <li class="{{liDiao}}" ng-repeat="i in diao track by $index" ui-sref="fen({cateId:i.cateId})" ng-init="refresh()">
+        <p>{{i.cateName}}</p>
+    </li>
+</ul>
